@@ -7,7 +7,7 @@ class employee
     int id;
     string name;
     string post;
-    float experience;              // in months
+    float experience;              
     long long package;
     long long Mob;
     string email_id;
