@@ -6,6 +6,7 @@ int main() {
     string fullname;
     string F_fullname;
     string M_fullname;
+    string appointmentTime;
     int appointmentnumber = 0;
     int n;
 
@@ -40,14 +41,21 @@ int main() {
         cin.ignore();  
         cout << endl;
 
+        // APPOINTMENT TIME
+        cout << "\t**APPOINTMENT TIME**: - " << endl;
+        cout << "Enter appointment time (e.g., 10:30 AM): ";
+        getline(cin, appointmentTime);
+        cout << endl;
+
         appointmentnumber++;
 
         // FINAL FORM
-        cout << "                     " << "*** APPOINTMENT DETAILS ***" << endl;
+        cout << "                     " << "***** APPOINTMENT DETAILS *****" << endl;
         cout << "# Appointment number: " << appointmentnumber << endl;
         cout << "  Student's name: " << fullname << endl;
         cout << "  Father's name: " << F_fullname << "          Contact no.: " << F_Mob << endl;
         cout << "  Mother's name: " << M_fullname << "          Contact no.: " << M_Mob << endl;
+        cout << "  Appointment Time: " << appointmentTime << endl;
         cout << "----------------------------------------------------------------------------" << endl;
     }
 
