@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-int main() {
+int main()
+{
     string fullname;
     string F_fullname;
     string M_fullname;
@@ -14,35 +15,36 @@ int main() {
     cin >> n;
     cin.ignore();
 
-    while (appointmentnumber < n) {
+    while (appointmentnumber < n)
+    {
         // DETAILS OF STUDENT
-        cout << "\t**DETAILS OF CANDIDATE**: - " << endl;
+        cout << "\t**DETAILS OF CANDIDATE** " << endl;
         cout << "Fullname: ";
         getline(cin, fullname);
         cout << endl;
 
         // DETAILS OF FATHER
-        cout << "\t**DETAILS OF FATHER**: - " << endl;
+        cout << "\t**DETAILS OF FATHER** " << endl;
         cout << "Fullname: ";
         getline(cin, F_fullname);
         long long F_Mob;
         cout << "Contact Number: ";
         cin >> F_Mob;
-        cin.ignore();  
+        cin.ignore();
         cout << endl;
 
         // DETAILS OF MOTHER
-        cout << "\t**DETAILS OF MOTHER**: - " << endl;
+        cout << "\t**DETAILS OF MOTHER** " << endl;
         cout << "Fullname: ";
         getline(cin, M_fullname);
         long long M_Mob;
         cout << "Contact Number: ";
         cin >> M_Mob;
-        cin.ignore();  
+        cin.ignore();
         cout << endl;
 
         // APPOINTMENT TIME
-        cout << "\t**APPOINTMENT TIME**: - " << endl;
+        cout << "\t**APPOINTMENT TIME** " << endl;
         cout << "Enter appointment time (e.g., 10:30 AM): ";
         getline(cin, appointmentTime);
         cout << endl;
